@@ -22,3 +22,23 @@ body.dark .border {
 body.dark .shadow {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
+/* style.css */
+
+/* Custom Dark Mode Styles */
+.dark input,
+.dark textarea {
+    background-color: #1a1a1a;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #7c3aed; /* Tailwind's purple-500 */
+}
+
+input:hover,
+textarea:hover {
+    border-color: #7c3aed; /* Tailwind's purple-500 */
+}
