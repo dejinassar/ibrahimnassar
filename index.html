@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ibrocoded</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden bg-white text-black">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] hidden dark:hidden">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-white">
+        <img src="./images/mylogo.png" alt="logo" class="w-28 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>  
+        <div class="flex items-center gap-4">
+        <img src="./images/moon_icon.png" alt="moon" class="w-6 cursor-pointer" onclick="toggleDarkMode()">
+        <a href="#contact" class="hidden lg:flex items-center gap-3 px-6 py-2.5 bg-gray-500 text-white rounded-full ml-4">
+                Contact
+                <img src="./images/arrow-icon.png" alt="arrow" class="w-3">
+            </a>
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./images/menu-black.png" alt="menu" class="w-6">
+            </button>
+        </div> 
+    </nav>
+
+    <ul id="sideMenu" class="hidden flex-col gap-6 py-20 px-10 fixed right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50">
+        <div class="absolute right-6 top-6" onclick="closeMenu()"> 
+            <img src="./images/close-black.png" alt="close" class="w-5 cursor-pointer">
+        </div>
+        <li class="mb-8"><a href="#top" class="text-xl">Home</a></li>
+        <li class="mb-8"><a href="#about" class="text-xl">About me</a></li>
+        <li class="mb-8"><a href="#services" class="text-xl">Services</a></li>
+        <li class="mb-8"><a href="#work" class="text-xl">My Work</a></li>
+        <li class="mb-8"><a href="#contact" class="text-xl">Contact me</a></li>
+    </ul>
+  
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./images/myprofile.jpeg" alt="Profile Image" class="rounded-full w-32 h-48 object-cover mb-4">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">
+            Hi! I'm Ibrahim Nassar <img src="./images/hand-icon.png" alt="hand" class="w-6">
+        </h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Software Engineer</h1>
+        <p class="max-w-2xl mx-auto">I'm a dedicated software engineer. With expertise in PHP, Python, and a range of modern technologies, I build robust, scalable applications. Welcome to my portfolio, where you can explore my projects and professional journey.</p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820eb] to-[#da7d20] text-white flex items-center gap-2">Contact me <img src="./images/right-arrow-white.png" alt="arrow" class="w-4"></a>
+            <a href="./images/Ibrahim_Nassar_Resume.pdf" download="Ibrahim_Nassar_Resume.pdf" class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white">My Resume <img src="./images/download-icon.png" alt="" class="w-4"></a>
+        </div>
+        </div>
+    </div>
+
+    <!-- About me -->
+    <div id="about" class="w-full px-6 py-16 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg text-gray-600 dark:text-gray-400">Introduction</h4>
+        <h2 class="text-center text-4xl font-semibold mb-12">About Me</h2>
+        <div class="flex flex-col lg:flex-row items-center lg:items-start gap-16 mx-auto max-w-4xl">
+            <div class="flex-shrink-0">
+                <img src="./images/myprofile.jpeg" alt="Profile Image" class="w-48 h-72 rounded-3xl shadow-lg mx-auto lg:mx-0">
+            </div>
+            <div class="flex-1 mt-8 lg:mt-0">
+                <p class="mb-10 text-white-700 leading-relaxed text-center lg:text-left ">I'm a dedicated software engineer with a passion for backend development. My expertise lies in PHP and Python, complemented by a range of modern technologies including JavaScript, React, and cloud computing. I specialize in building robust, scalable applications that solve real-world problems. With a strong foundation in database management, security, and DevOps practices, I continuously strive to enhance my skills and stay at the forefront of technological advancements. Welcome to my portfolio, where you can explore my projects and witness my professional journey.</p>
+                <ul class="grid grid-cols-2 gap-6">
+                    <li class="border p-6 rounded-xl hover:bg-purple-50 transition-shadow shadow hover:shadow-lg flex flex-col items-center text-center">
+                        <img src="./images/code-icon.png" alt="Languages Icon" class="w-8 mb-4">
+                        <h3 class="text-xl font-semibold text-white-700 mb-2">Languages</h3>
+                        <p class="text-gray-600">HTML, CSS, JavaScript, PHP, Python, React, Next.js</p>
+                    </li>
+                    <li class="border p-6 rounded-xl hover:bg-purple-50 transition-shadow shadow hover:shadow-lg flex flex-col items-center text-center">
+                        <img src="./images/edu-icon.png" alt="Education Icon" class="w-8 mb-4">
+                        <h3 class="text-xl font-semibold text-white-700 mb-2">Education</h3>
+                        <p class="text-gray-600">BSc. in Computer Science</p>
+                    </li>
+                    <li class="border p-6 rounded-xl hover:bg-purple-50 transition-shadow shadow hover:shadow-lg flex flex-col items-center text-center">
+                        <img src="./images/project-icon.png" alt="Projects Icon" class="w-8 mb-4">
+                        <h3 class="text-xl font-semibold text-white-700 mb-2">Projects</h3>
+                        <p class="text-gray-600">Built more than 5 projects</p>
+                    </li>
+                </ul>
+                <h4 class="my-6 text-white-700 text-lg text-center">My Favourite Tools</h4>
+                <ul class="flex items-center justify-center flex-wrap gap-6">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/vscode.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/git.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="./images/postman.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                   </ul>
+            </div>
+        </div>
+    </div>
+     <!-- Services -->
+     <div id="services" class="w-full px-6 py-16 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg text-gray-600">What I Do</h4>
+        <h2 class="text-center text-4xl font-semibold mb-12">Services</h2>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-6 items-center text-center">
+            <div class="border p-8 rounded-xl shadow hover:shadow-lg hover:bg-purple-50 transition-shadow">
+                <img src="./images/backend.jpeg" alt="Backend Development Icon" class="w-14 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-3 text-white-700">Backend Development</h3>
+                <p class="text-gray-600">Building robust and scalable server-side applications using PHP, Python, and modern frameworks.</p>
+            </div>
+            <div class="border p-8 rounded-xl shadow hover:shadow-lg hover:bg-purple-50 transition-shadow">
+                <img src="./images/web.png" alt="Web Design Icon" class="w-14 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-3 text-white-700">Web Development</h3>
+                <p class="text-gray-600">Crafting visually appealing and user-friendly website designs using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="border p-8 rounded-xl shadow hover:shadow-lg hover:bg-purple-50 transition-shadow">
+                <img src="./images/seo.png" alt="SEO Icon" class="w-14 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-3 text-white-700">SEO Optimization</h3>
+                <p class="text-gray-600">Improving website visibility and ranking on search engines through effective SEO strategies.</p>
+            </div>
+            <div class="border p-8 rounded-xl shadow hover:shadow-lg hover:bg-purple-50 transition-shadow">
+                <img src="./images/api.png" alt="API Development Icon" class="w-14 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-3 text-white-700">API Development</h3>
+                <p class="text-gray-600">Creating robust and secure APIs to enable seamless integration between applications.</p>
+            </div>
+            <div class="border p-8 rounded-xl shadow hover:shadow-lg hover:bg-purple-50 transition-shadow">
+                <img src="./images/cloud.png" alt="Cloud Services Icon" class="w-14 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-3 text-white-700">Cloud Services</h3>
+                <p class="text-gray-600">Offering cloud solutions to enhance scalability, reliability, and security for your applications.</p>
+            </div>
+            <div class="border p-8 rounded-xl shadow hover:shadow-lg hover:bg-purple-50 transition-shadow">
+                <img src="./images/devops.jpeg" alt="DevOps Icon" class="w-14 mx-auto mb-4">
+                <h3 class="text-xl font-semibold mb-3 text-white-700">DevOps</h3>
+                <p class="text-gray-600">Implementing DevOps practices to streamline development, deployment, and monitoring processes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Work -->
+    <div id="work" class="w-full px-6 py-16 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg text-gray-600 dark:text-gray-400">Portfolio</h4>
+        <h2 class="text-center text-4xl font-semibold mb-12">My Work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <!-- Project Card -->
+            <div class="project-card border p-6 rounded-xl shadow bg-white">
+                <img src="./images/work-1.png" alt="Project 1" class="w-full h-32 object-cover rounded-t-xl">
+                <h3 class="text-xl font-semibold mt-4 text-white-700">Project Title 1</h3>
+                <p class="text-gray-600 mt-2">A brief description of the project goes here. It explains the project's purpose, technologies used, and key features.</p>
+                <div class="flex gap-4 mt-4">
+                    <a href="#" class="text-purple-600 hover:text-purple-800 transition">Live Demo</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 transition">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card border p-6 rounded-xl shadow bg-white">
+                <img src="./images/work-2.png" alt="Project 2" class="w-full h-32 object-cover rounded-t-xl">
+                <h3 class="text-xl font-semibold mt-4 text-white-700">Project Title 2</h3>
+                <p class="text-gray-600 mt-2">A brief description of the project goes here. It explains the project's purpose, technologies used, and key features.</p>
+                <div class="flex gap-4 mt-4">
+                    <a href="#" class="text-purple-600 hover:text-purple-800 transition">Live Demo</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 transition">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card border p-6 rounded-xl shadow bg-white">
+                <img src="./images/work-3.png" alt="Project 3" class="w-full h-32 object-cover rounded-t-xl">
+                <h3 class="text-xl font-semibold mt-4 text-white-700">Project Title 3</h3>
+                <p class="text-gray-600 mt-2">A brief description of the project goes here. It explains the project's purpose, technologies used, and key features.</p>
+                <div class="flex gap-4 mt-4">
+                    <a href="#" class="text-purple-600 hover:text-purple-800 transition">Live Demo</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 transition">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card border p-6 rounded-xl shadow bg-white">
+                <img src="./images/work-4.png" alt="Project 4" class="w-full h-32 object-cover rounded-t-xl">
+                <h3 class="text-xl font-semibold mt-4 text-white-700">Project Title 4</h3>
+                <p class="text-gray-600 mt-2">A brief description of the project goes here. It explains the project's purpose, technologies used, and key features.</p>
+                <div class="flex gap-4 mt-4">
+                    <a href="#" class="text-purple-600 hover:text-purple-800 transition">Live Demo</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-800 transition">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <a href="#" class="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div id="contact" class="w-full px-6 py-16 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg text-gray-600 dark:text-gray-400">Get in Touch</h4>
+        <h2 class="text-center text-4xl font-semibold mb-12">Contact Me</h2>
+        <p class="text-center mb-6 text-gray-600">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+        <form action="#" method="POST" class="max-w-3xl mx-auto grid grid-cols-1 gap-6">
+            <input type="text" name="name" placeholder="Your Name" class="border p-4 rounded-lg focus:outline-none focus:border-purple-500">
+            <input type="email" name="email" placeholder="Your Email" class="border p-4 rounded-lg focus:outline-none focus:border-purple-500">
+            <textarea name="message" rows="6" placeholder="Your Message" class="border p-4 rounded-lg focus:outline-none focus:border-purple-500"></textarea>
+            <button type="submit" class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">Send Message 
+
+            </button>
+        </form>
+    </div>
+
+   <!--footer-->
+   <div class="mt-20">
+    <div class="text-center">
+<img src="./images/mylogo.png" alt="" class="w-36 mx-auto mb-2">
+<div class="w-max flex items-center gap-2 mx-auto">
+    <img src="./images/mail_icon.png" alt="" class="w-6">
+    dejinassar@gmail.com
+</div>     
+</div>
+<div class="text-center sm:flex items-center justify-between border-t border-grau-400 mx-[10%] mt-12 py-6" >
+    <p>© 2024 Ibrahim Nassar. All rights reserved.</p>
+    <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+        <li><a href="https://twitter.com/realnassar9">GitHub</a></li>
+        
+        <li><a href="https://twitter.com/realnassar9">Linkedln</a></li>
+    
+
+        <li><a href="https://twitter.com/realnassar9">Twitter</a></li>
+    
+   
+    </ul>
+</div>
+   </div>
+
+<script src="./script.js"></script>   
+</body>
+</html>
+ 

@@ -1,0 +1,24 @@
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+   /* Dark mode styles */
+   body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark .bg-white {
+    background-color: #1e1e1e;
+}
+body.dark .text-gray-600 {
+    color: #b0b0b0;
+}
+body.dark .border {
+    border-color: #333;
+}
+body.dark .shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
